@@ -6,7 +6,11 @@ const DeleteLastItem = props => {
     props.onDeleteLastItem();
   };
   
-  
+  return (
+    <button onClick={handleDeleteLastItem} disabled={props.buttonDisabled}>
+	  Delete Last Item
+    </button>
+  );
 };
 
 export default DeleteLastItem;
