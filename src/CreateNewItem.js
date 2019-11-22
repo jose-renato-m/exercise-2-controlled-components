@@ -6,7 +6,9 @@ class CreateNewItem extends React.Component {
       value: '',
     };
 
-
+	handleChange = event => {
+      this.setState({ value: event.target.value });
+    };
 };
 
 export default CreateNewItem;
