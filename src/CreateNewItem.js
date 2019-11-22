@@ -14,6 +14,10 @@ class CreateNewItem extends React.Component {
       event.preventDefault();
       this.props.onAddItem(this.state.value);
     };
+
+	inputIsEmpty = () => {
+      return this.state.value === '';
+    };
 };
 
 export default CreateNewItem;
