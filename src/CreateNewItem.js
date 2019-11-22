@@ -18,6 +18,22 @@ class CreateNewItem extends React.Component {
 	inputIsEmpty = () => {
       return this.state.value === '';
     };
+
+	render() {
+      return (
+        <div>
+          <form onSubmit={this.addItem}>
+      		<input
+              type='text'
+              placeholder='Enter New Item'
+              value={this.state.value}
+              onChange={this.handleChange}
+             />
+          </form>
+        </div>
+         
+      );
+    }
 };
 
 export default CreateNewItem;
