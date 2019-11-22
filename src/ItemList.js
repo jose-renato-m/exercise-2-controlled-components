@@ -6,6 +6,7 @@ const ItemList = props => {
 	return (
     	<div>
       	  <p className='items'>Items</p>
+      	  <ol className='item'>{props.items.map((item, index) => <Item key={index} item={item} />)}</ol>
       	</div>
     );
 };
