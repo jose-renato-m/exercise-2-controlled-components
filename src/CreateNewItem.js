@@ -31,10 +31,13 @@ class CreateNewItem extends React.Component {
              />
              <button disabled={this.inputIsEmpty()}>Add</button>
           </form>
-        </div>
-         
+        </div>         
       );
     }
+}
+
+CreateNewItem.propTypes = {
+  onAddItem: PropTypes.func.isRequired,
 };
 
 export default CreateNewItem;
