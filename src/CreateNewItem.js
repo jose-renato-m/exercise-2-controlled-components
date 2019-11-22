@@ -29,6 +29,7 @@ class CreateNewItem extends React.Component {
               value={this.state.value}
               onChange={this.handleChange}
              />
+             <button disabled={this.inputIsEmpty()}>Add</button>
           </form>
         </div>
          
