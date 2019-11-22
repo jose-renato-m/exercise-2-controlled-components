@@ -5,4 +5,8 @@ const Item = props => {
 	return <li>{props.item}</li>;
 };
 
+Item.propTypes = {
+	item: PropTypes.string.isRequired,
+};
+
 export default Item;
