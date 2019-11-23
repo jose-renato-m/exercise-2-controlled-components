@@ -35,6 +35,7 @@ class App extends React.Component {
           onDeleteLastItem={this.handleDeleteLastItem}
           buttonDisabled={this.noItemsFound()}
         />
+        <ItemList items={this.state.items} />
         <form onSubmit={this.addItem}>
           <input
             type="text"
