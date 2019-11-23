@@ -7,7 +7,6 @@ import DeleteLastItem from './DeleteLastItem';
 
 class App extends React.Component {
   state = {
-    value: '',
     items: [],
   };
 
