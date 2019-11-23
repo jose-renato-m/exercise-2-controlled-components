@@ -30,6 +30,7 @@ class App extends React.Component {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <h2>Shopping List</h2>
+        <CreateNewItem on AddItem={this.handleAddItem} />
         <form onSubmit={this.addItem}>
           <input
             type="text"
