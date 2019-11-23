@@ -10,6 +10,10 @@ class App extends React.Component {
     items: [],
   };
 
+  handleAddItem = item => {
+    this.setState(prevState => ({ items: [...prevState.items, item] }));
+  };
+
   handleChange = event => {
     this.setState({ value: event.target.value });
   };
