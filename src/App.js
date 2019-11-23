@@ -35,25 +35,7 @@ class App extends React.Component {
           onDeleteLastItem={this.handleDeleteLastItem}
           buttonDisabled={this.noItemsFound()}
         />
-        <ItemList items={this.state.items} />
-        <form onSubmit={this.addItem}>
-          <input
-            type="text"
-            placeholder="Enter New Item"
-            value={this.state.value}
-            onChange={this.handleChange}
-          />
-          <button disabled={this.inputIsEmpty()}>Add</button>
-        </form>
-
-        <button onClick={this.deleteLastItem} disabled={this.noItemsFound()}>
-          Delete Last Item
-        </button>
-
-        <p className="items">Items</p>
-        <ol className="item-list">
-          {this.state.items.map((item, index) => <li key={index}>{item}</li>)}
-        </ol>
+        <ItemList items={this.state.items} />        
       </div>
     );
   }
