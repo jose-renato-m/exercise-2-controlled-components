@@ -18,6 +18,10 @@ class App extends React.Component {
     this.setState(prevState => ({ items: this.state.items.slice(0, -1)}));
   };
 
+  noItemsFound = () => {
+    return this.state.items.length === 0;
+  };
+
   handleChange = event => {
     this.setState({ value: event.target.value });
   };
