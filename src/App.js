@@ -31,6 +31,10 @@ class App extends React.Component {
         </header>
         <h2>Shopping List</h2>
         <CreateNewItem on AddItem={this.handleAddItem} />
+        <DeleteLastItem
+          onDeleteLastItem={this.handleDeleteLastItem}
+          buttonDisabled={this.noItemsFound()}
+        />
         <form onSubmit={this.addItem}>
           <input
             type="text"
