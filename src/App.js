@@ -20,30 +20,7 @@ class App extends React.Component {
 
   noItemsFound = () => {
     return this.state.items.length === 0;
-  };
-
-  handleChange = event => {
-    this.setState({ value: event.target.value });
-  };
-
-  addItem = event => {
-    event.preventDefault();
-    this.setState(oldState => ({
-      items: [...oldState.items, this.state.value],
-    }));
-  };
-
-  deleteLastItem = event => {
-    this.setState(prevState => ({ items: this.state.items.slice(0, -1) }));
-  };
-
-  inputIsEmpty = () => {
-    return this.state.value === '';
-  };
-
-  noItemsFound = () => {
-    return this.state.items.length === 0;
-  };
+  };  
 
   render() {
     return (
